@@ -1,0 +1,242 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: verdana;
+}
+.navigasi{
+	background-color: seagreen;
+	width: 100%;
+	height: 70px;
+	color: white;
+	position: fixed;
+	z-index: 1000;
+}
+
+.logo{
+	float: left;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	padding-left: 30px;
+}
+
+.menu{
+	margin-left: 800px;
+	padding-top: 27px;
+}
+
+.menu ul li{
+	list-style: none;
+	display: inline-block;
+	margin-right: 50px;
+}
+
+.menu ul li a{
+	text-decoration: none;
+	color: white;
+}
+.menu ul li a:hover{
+	color: lightgreen;
+	font-style: italic;
+}
+
+.banner{
+	background-color:#71d16b  ;
+	height: 600px;
+	text-align: center;
+	color: seagreen;
+}
+
+.banner img{
+	border-radius: 100px;
+	height: 150px;
+	border: 2px solid seagreen;
+	margin-top: 100px;
+}
+.banner h1{
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+.banner button{
+	margin-top: 60px;
+	padding: 10px;
+	width: 400px;
+	border-radius: 50px;
+	border: none;
+}
+
+.banner button:hover{
+	background-color: #71d16b;
+	border: 1px solid white;
+	color: white;
+}
+
+h1 span:before{
+	content: '';
+	animation: gerak infinite 2s ease;
+	transform: translateY(-50%);
+	color: darkgreen;
+	font-size: 30px;
+}
+
+@keyframes gerak{
+	80%{
+		content: 'Selamat Datang di Fore Coffee!';
+	}
+}
+
+section{
+	padding: 20px 0;
+}
+section h2{
+	text-align: center;
+	padding: 5px 0;
+	color: darkgreen;
+	margin-bottom: 15px;
+}
+.about img{
+	display: block;
+	margin: auto;
+	padding: 20px;
+	height: 250px;
+	width: 600px;
+	margin-top: 5px;
+	text-align: center;
+}
+.about p{
+	padding: 20px;
+	margin-top: 2opx;
+	color: darkgreen;
+	text-align: center;
+	word-spacing: 2px;
+	line-height: 25px;
+}
+.beverage{
+	position: relative;
+	padding: 20px 0;
+}
+.container{
+	text-align: center;
+}
+.search-form{
+	background-color:#71d16b;
+	color: darkgreen;
+	height: 100px;
+	width: 400px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+	padding: 10px;
+	border-radius: 20px;
+}
+.gallery {
+    position: relative;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.trailer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px; 
+}
+
+.trailer h2 {
+    padding: 5px 0;
+    color: darkgreen;
+    margin-bottom: 15px;
+}
+
+table {
+    margin: 0 auto; 
+}
+
+tr {
+    display: flex;
+    justify-content: center;
+}
+
+td {
+    padding: 10px;
+}
+
+.trailer iframe {
+    width: 500px;
+    height: 300px;
+    border-radius: 20px;
+ }
+.quotes {
+    text-align: justify;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 60px;
+}
+.quotes .title {
+    font-size: 30px;
+    font-family: georgia;
+    font-weight: bold;
+    color: darkgreen;
+}
+.quotes .quote {
+	text-align: justify-all;
+    font-size: 18px;
+    font-style: italic;
+    color: darkgreen;
+    margin-top: 10px;
+}
+.footer{
+	background-color: seagreen;
+}
+.footerContainer{
+	width: 100%;
+	padding: 20px 30px;
+}
+.socialIcons{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 0 auto;
+}
+.socialIcons a{
+	text-decoration: none;
+	padding: 10px;
+	background-color: white;
+	margin: 10px;
+	border-radius: 50%;
+}
+.socialIcons a i{
+	font-size: 2em;
+	color: seagreen;
+	opacity: 0.9;
+}
+.socialIcons a:hover{
+	background-color: seagreen;
+	transition: 0.5s;
+}
+.socialIcons a:hover i{
+	color: darkgreen;
+	transition: 0.5s;
+}
+.footerBottom{
+	background-color: seagreen;
+	padding: 10px;
+	text-align: center;
+}
+.footerBottom p{
+	color: white;
+}
+.designer{
+	opacity: 0.7;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 400;
+	margin: 0px 5px;
+}
+@media (max-width: 700px){
+	.socialIcons a{
+		padding: 8px;
+		margin: 4px;
+	}
+}
