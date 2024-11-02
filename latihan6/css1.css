@@ -1,0 +1,355 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: garamond;
+	text-decoration: none;
+	border: none;
+	outline: none;
+}
+html{
+	font-size: 63%;
+}
+body{
+	display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+header{
+	margin-top: 20px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 1rem 9%;
+	background-color: transparent;
+	filter: drop-shadow(10px);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 100;
+}
+.logo{
+	font-size: 3rem;
+	color: darkgreen;
+	font-weight: 800;
+	cursor: pointer;
+	transition: 0.5s ease;
+}
+.logo:hover{
+	transform: scale(1.1);
+}
+nav a{
+	font-size: 1.8rem;
+	color: seagreen;
+	margin-left: 4rem;
+	font-weight: 500;
+	transition: 0.3s ease;
+	border-bottom: 3px solid transparent;
+}
+nav a:hover,
+nav a.active{
+	color: darkgreen;
+	border-bottom: 3px solid mediumseagreen;
+}
+section{
+	min-height: 100vh;
+	padding: 5rem 9% 5rem;
+}
+.home{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 8rem;
+	background-color: white;
+}
+.home-content h1{
+	font-size: 3.5rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: seagreen;
+}
+h1 span{
+	color: darkgreen;
+	font-size: 5rem;
+}
+.home-content h3{
+	font-size: 2.5rem;
+	margin-bottom: 1rem;
+	font-weight: 500;
+	color: darkgreen;
+}
+.home-content p{
+	font-size: 2rem;
+	margin-bottom: 1rem;
+	font-weight: 200;
+	color: darkgreen;
+	font-style: italic;
+}
+.home-img{
+	border-radius: 50%;
+}
+.home-img img{
+	position: relative;
+	width: 32vw;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: 0.2s linear;
+}
+.home-img img:hover{
+	font-size: 1.8rem;
+	font-weight: 500;
+}
+.social-icons a{
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 4rem;
+	height: 4rem;
+	background-color: transparent;
+	border: 0.2rem solid mediumseagreen;
+	font-size: 2rem;
+	border-radius: 50%;
+	margin: 3rem 1.5rem 3rem 0;
+	transition: 0.3s ease;
+}
+.social-icons a:hover{
+	color: darkgreen;
+	transform: scale(1.3) translateY(-5px);
+	background-color: palegreen ;
+	box-shadow: 0 0 25px mediumseagreen;
+}
+.btn{
+	display: inline-block;
+	padding: 1rem 2.8rem;
+	background-color: #71d16b;
+	border-radius: 4rem;
+	font-size: 1.6rem;
+	color: darkgreen;
+	letter-spacing: 0.3rem;
+	font-weight: 600;
+	border: 2px solid darkgreen;
+	transition: 0.3s ease;
+	cursor: pointer;
+}
+.btn:hover{
+	transform: scale3d(1.03);
+	background-color: seagreen;
+	color: darkgreen;
+	box-shadow: 0 0 25px seagreen;
+}
+.about {
+	color: darkgreen;
+	padding: 40px 20px;
+	font-family: garamond;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+.about h2 {
+	font-size: 2.5rem;
+	color: darkgreen;
+	margin-bottom: 2rem;
+	padding-bottom: 15px;
+	box-sizing: border-box;
+}
+.container {
+	width: 80%;
+	margin: auto;
+	background-color: #caffbf ;
+	padding: 20px;
+	border: 1px solid #ddd;
+	border-radius: 50px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	box-sizing: border-box;
+	text-align: justify;
+	gap: 20px;
+}
+.container img {
+	width: 200px;
+	height: auto; 
+	margin-right: 20px;
+	border-radius: 10px;
+	box-sizing: border-box;
+}
+.container p {
+	font-size: 1.7rem;
+	line-height: 1.2;
+	color: darkgreen;
+	margin-bottom: 15px;
+	text-align: justify;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+	.container {
+		width: 100%;
+		padding: 15px;
+	}
+
+	.about h2 {
+		font-size: 2rem;
+	}
+
+	.container img {
+		width: 100%;
+		height: auto;
+		float: none;
+		margin: 0 auto 20px;
+		display: block;
+	}
+
+	.container p {
+		font-size: 1rem;
+		padding: 5px;
+	}
+}
+.beverage{
+	color: darkgreen;
+	padding: 40px 20px;
+	font-family: garamond;
+	box-sizing: border-box;
+	text-align: center;
+}
+.beverage h2 {
+	font-size: 2.5rem;
+	color: darkgreen;
+	margin-bottom: 2rem;
+	padding-bottom: 15px;
+	box-sizing: border-box;
+}
+.card-container{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 25px;
+	margin-top: 20px;
+}
+.card{
+	width: 225px;
+	height: 350px;
+	background-color: #caffbf;
+	border: 5px solid #ddd;
+	border-radius: 10px;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+	overflow: hidden;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover{
+	transform: translateY(-20px);
+	box-shadow: 0 10px 15px rgba(0, 0, 0, 0.8);
+}
+.card img{
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+.card-content{
+	padding: 5px;
+	text-align: center;
+	padding-bottom: 30px;
+}
+.card-content h1{
+	font-size: 17px;
+	font-family: garamond;
+	margin-bottom: 10px;
+	text-align: center;
+	color: darkgreen;
+}
+.card-button{
+	display: inline-block;
+	background-color: seagreen;
+	color: white;
+	text-decoration: none;
+	border-radius: 5px;
+	padding: 7px 10px;
+	font-size: small;
+	align-items: center;
+	margin-top: 40px;
+}
+.card{
+	outline: 5px double darkgreen;
+	outline-style: dotted;
+}
+ul.a {
+	list-style-position: inside;
+    list-style-type: circle; 
+    padding: 40px 20px;
+    font-family: garamond;
+}
+ul.a h1 {
+    font-size: 2.1rem;
+    color: darkgreen; 
+    margin-bottom: 10px;
+    text-align: left;
+    padding-left: 120px;
+}
+ul.a li {
+	list-style-type: circle;
+    font-size: 1.8rem;
+    color: darkgreen; 
+    margin: 1px 0;
+    padding-left: 140px;
+}
+ul.a li + li {
+    margin-top: 10px;
+}
+.gallery{
+	color: darkgreen;
+	padding: 40px 20px;
+	font-family: garamond;
+	box-sizing: border-box;
+	text-align: center;
+}
+.gallery h2 {
+	font-size: 2.5rem;
+	color: darkgreen;
+	margin-bottom: 2x;
+	padding-bottom: 20px;
+	box-sizing: border-box;
+}
+.trailer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px; 
+}
+
+.trailer h2 {
+    padding: 5px 0;
+    color: darkgreen;
+    margin-bottom: 15px;
+}
+
+table {
+    margin: 0 auto; 
+}
+
+tr {
+    display: flex;
+    justify-content: center;
+}
+
+td {
+    padding: 10px;
+}
+
+.trailer iframe {
+    width: 500px;
+    height: 300px;
+    border-radius: 50px;
+    outline: 5px double darkgreen;
+	outline-style: hidden;
+}
+.footer{
+	padding-top: 2px; 
+    background-color: darkgreen;
+    color: white;
+    height: 30px;
+    text-align: center;
+    font-size: 2rem;
+    font-family: garamond;
+}
