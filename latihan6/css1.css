@@ -182,8 +182,6 @@ h1 span{
 	padding: 10px;
 	box-sizing: border-box;
 }
-
-/* Responsif */
 @media (max-width: 768px) {
 	.container {
 		width: 100%;
