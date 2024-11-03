@@ -325,7 +325,7 @@ ul.a li + li {
     height: 300px;
     border-radius: 50px;
     outline: 5px darkgreen;
-    outline-style: hidden;
+	outline-style: hidden;
 }
 .table {
     list-style-position: inside;
