@@ -315,32 +315,41 @@ ul.a li + li {
     align-items: center;
     margin-bottom: 20px; 
 }
-
 .trailer h2 {
     padding: 5px 0;
     color: darkgreen;
     margin-bottom: 15px;
 }
-
-table {
-    margin: 0 auto; 
-}
-
-tr {
-    display: flex;
-    justify-content: center;
-}
-
-td {
-    padding: 10px;
-}
-
 .trailer iframe {
     width: 500px;
     height: 300px;
     border-radius: 50px;
     outline: 5px double darkgreen;
 	outline-style: hidden;
+}
+.table {
+    list-style-position: inside;
+    list-style-type: circle; 
+    padding: 40px 20px;
+    font-family: garamond;
+}
+.table h1 {
+    font-size: 2.1rem;
+    color: darkgreen; 
+    margin-bottom: 10px;
+    text-align: left;
+    padding-left: 5px;
+}
+.table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.table table td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    color: #333;
 }
 .footer{
 	padding-top: 2px; 
